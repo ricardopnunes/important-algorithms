@@ -1,1 +1,1 @@
-# important-algorithms
+# Important Algorithms

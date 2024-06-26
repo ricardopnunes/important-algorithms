@@ -1,0 +1,4 @@
+/.vscode/**
+/build/**
+/cpp/output/**
+/cpp/build/**

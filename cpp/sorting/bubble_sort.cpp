@@ -2,26 +2,26 @@
 #include <algorithm>
 #include <vector>
 #include <cassert>
+#include <cstdint>
 
 namespace sorting{
 
   template<typename T>
   void bubbleSort(std::vector<T>& vetor){
     // std::sort(vetor.begin().end(), [](T a, T b) { return a < b; });
-      for (size_t i = 0; i < vetor.size() -1; i++){
-          for (size_t j = 0; j < vetor.size() -i -1; j++){
-              if(vetor[j] > vetor[j + 1]){
-                // std::swap(vetor[j][j + 1]);
-                T temp = vetor[j + 1];
-                vetor[j + 1] = vetor[j];
-                vetor[j] = temp;  
-              }
-          }
+    for (size_t i = 0; i < vetor.size() -1; i++){
+      for (size_t j = 0; j < vetor.size() -i -1; j++){
+        if(vetor[j] > vetor[j + 1]){
+          // std::swap(vetor[j][j + 1]);
+          T temp = vetor[j + 1];
+          vetor[j + 1] = vetor[j];
+          vetor[j] = temp;  
+        }
       }
+    }
   }
 }
 
-s
 
 
 static void testes() {
